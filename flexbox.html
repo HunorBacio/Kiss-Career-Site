@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Practice</title>
+        <style>
+            #container {
+                background-color:coral;
+                border: 1px solid black;
+                font-family: sans-serif;
+                padding: 10px;
+                display:flex;
+                flex-direction: row;
+                align-items:flex-end;
+                max-width:400px;
+                height: 500px;
+                justify-content: space-around;
+            }
+
+            .item {
+                border: 1px solid black;
+                padding-top: 10px;
+                padding-bottom:10px;
+                background-color: cornflowerblue;
+            }
+
+            #item-2 {
+                align-self: flex-start;
+                flex:1
+            }
+
+            #item-1 {
+                align-self:center;
+                flex:1
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="item-1" class="item">
+                Item 1
+            </div>
+            <div id="item-2" class="item">
+                Item 2
+            </div>
+            <div id="item-3" class="item">
+                Item 3
+            </div>
+            <div id="item-4" class="item">
+                Item 4
+            </div>
+            
+        </div>
+    </body>
+</html>
